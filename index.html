@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      header {
+        background-image: url("https://www.codaworx.com/wp-content/uploads/2020/12/IMG_0139-scaled.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: black;
+      }
+
+      .header {
+        background: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        margin: 200px 50px;
+        padding: 15px;
+        border-radius: 10px;
+      }
+
+      h1 {
+        font-size: 52px;
+      }
+
+      h2 {
+        font-size: 32px;
+      }
+      img {
+        width: 200px;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: 200px 200px 200px 200px;
+        justify-content: center;
+        grid-gap: 20px;
+        border-radius: 10px;
+      }
+      .black {
+        background: black;
+      }
+    </style>
+  </head>
+  <header>
+    <div class="header">
+      <h1>De Pere</h1>
+      <h2>A city in Wisconsin, USA</h2>
+    </div>
+  </header>
+  <body>
+    <div class="container">
+      <img
+        src="https://i.guim.co.uk/img/media/bf48c81421313e74475763bd7dcbe9ac6735de97/388_666_6112_3668/master/6112.jpg?width=1300&quality=45&fit=max&dpr=2&s=b2401ef9d0d95b3f598ac09141eace84"
+        alt=""
+      />
+      <img
+        src="https://i.guim.co.uk/img/media/ff943673f0312b3d2e7662cd9e044ff687c6e888/0_0_6000_3600/master/6000.jpg?width=880&quality=45&fit=max&dpr=2&s=dbf85214879becfc1de61295a2046a4a"
+        alt=""
+      />
+
+      <img
+        src="https://i.guim.co.uk/img/media/b43edc6f9c11c10393da9174b6ee13d2e6165069/0_184_5608_3365/master/5608.jpg?width=620&quality=45&fit=max&dpr=2&s=1a43c9fa76b2cbb7108892d4c18dd41c"
+        alt=""
+      />
+      <img
+        src="https://i.guim.co.uk/img/media/318de6ff3c90adbf439fe9631b3deea919740daf/0_77_4752_2851/master/4752.jpg?width=620&quality=45&fit=max&dpr=2&s=c531e0f6b1e1db245d0866dcc394a033"
+        alt=""
+      />
+      <img
+        src="https://i.guim.co.uk/img/media/bf48c81421313e74475763bd7dcbe9ac6735de97/388_666_6112_3668/master/6112.jpg?width=1300&quality=45&fit=max&dpr=2&s=b2401ef9d0d95b3f598ac09141eace84"
+        alt=""
+      />
+      <img
+        src="https://i.guim.co.uk/img/media/ff943673f0312b3d2e7662cd9e044ff687c6e888/0_0_6000_3600/master/6000.jpg?width=880&quality=45&fit=max&dpr=2&s=dbf85214879becfc1de61295a2046a4a"
+        alt=""
+      />
+
+      <img
+        src="https://i.guim.co.uk/img/media/b43edc6f9c11c10393da9174b6ee13d2e6165069/0_184_5608_3365/master/5608.jpg?width=620&quality=45&fit=max&dpr=2&s=1a43c9fa76b2cbb7108892d4c18dd41c"
+        alt=""
+      />
+      <img
+        src="https://i.guim.co.uk/img/media/318de6ff3c90adbf439fe9631b3deea919740daf/0_77_4752_2851/master/4752.jpg?width=620&quality=45&fit=max&dpr=2&s=c531e0f6b1e1db245d0866dcc394a033"
+        alt=""
+      />
+      <button>DARK</button>
+    </div>
+    <script>
+      function makeItBlack() {
+        let box = document.querySelector("body");
+        box.classList.add("black");
+      }
+
+      let button = document.querySelector("button");
+      button.addEventListener("click", makeItBlack);
+    </script>
+  </body>
+</html>
